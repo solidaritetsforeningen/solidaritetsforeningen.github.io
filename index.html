@@ -100,16 +100,30 @@
       margin-bottom: 20px;
     }
 
-    .qr-placeholder {
-      width: 180px;
-      height: 180px;
-      margin: 0 auto;
-      background: #ddd;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #777;
-      font-size: 14px;
+    .qr-container {
+      width: 220px;
+      margin: 30px auto 0 auto;
+    }
+
+    .qr-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .contact-info {
+      margin-top: 30px;
+    }
+
+    .contact-item {
+      margin-bottom: 30px;
+      font-size: 17px;
+      color: var(--text-secondary);
+    }
+
+    .contact-item strong {
+      color: var(--text-primary);
+      font-weight: 500;
     }
 
     footer {
@@ -139,6 +153,10 @@
 
       .quote {
         font-size: 20px;
+      }
+
+      .qr-container {
+        width: 180px;
       }
     }
   </style>
@@ -188,8 +206,8 @@
         </div>
 
         <!-- Replace with real QR -->
-        <div class="qr-placeholder">
-          <img src="assets/swish-qr.png" alt="Dayanışma swish" />
+        <div class="qr-container">
+          <img src="assets/swish-qr.png" alt="Swish QR-kod" class="qr-image" />
         </div>
       </div>
     </div>
@@ -198,12 +216,33 @@
   <!-- CONTACT -->
   <section class="container">
     <h2>Kontakt</h2>
-    <p>
-      Email: <a href="mailto:info@solidaritetsforeningen.se">info@solidaritetsforeningen.se</a>
-    </p>
-    <p>
-      Bankgiro: XXXX-XXXX
-    </p>
+
+    <div class="contact-info">
+      <div class="contact-item">
+        <strong>E-post</strong><br>
+        <a href="mailto:info@solidaritetsforeningen.se">
+          info@solidaritetsforeningen.se
+        </a>
+      </div>
+
+      <div class="contact-item">
+        <strong>Organisationsnummer</strong><br>
+        802012-6457
+      </div>
+
+      <div class="contact-item">
+        <strong>Postadress</strong><br>
+        C/O Solidaritets­huset<br>
+        Postbox 26<br>
+        Tegelviksgatan 40 Bv<br>
+        116 41 Stockholm
+      </div>
+
+      <div class="contact-item">
+        <strong>Bankgiro</strong><br>
+        840-5458
+      </div>
+    </div>
   </section>
 
   <!-- FOOTER -->
