@@ -127,15 +127,44 @@
     }
 
     footer {
-      text-align: center;
       padding: 60px 20px;
+      text-align: center;
       font-size: 14px;
       color: #777;
     }
 
-    footer img {
-      max-width: 200px;
-      margin-top: 20px;
+    .footer-content {
+      max-width: var(--max-width);
+      margin: 0 auto;
+    }
+
+    .footer-primary {
+      margin-bottom: 20px;
+    }
+
+    .footer-social {
+      margin-bottom: 30px;
+    }
+
+    .footer-social a {
+      text-decoration: none;
+      color: var(--text-primary);
+      font-weight: 500;
+      transition: opacity 0.2s ease;
+    }
+
+    .footer-social a:hover {
+      opacity: 0.6;
+    }
+
+    .footer-divider {
+      margin: 0 8px;
+      color: #aaa;
+    }
+
+    .footer-logo img {
+      max-width: 160px;
+      opacity: 0.85;
     }
 
     @media (max-width: 600px) {
@@ -170,7 +199,7 @@
     <img src="assets/logo-main.png" alt="Solidaritetsföreningen logotyp" />
 
     <h1>Solidaritet över generationer</h1>
-    <p>Från 1968 till idag – kampen för rättvisa fortsätter.</p>
+    <p>Från 1977 till idag - kampen för rättvisa fortsätter.</p>
     <div class="divider"></div>
   </section>
 
@@ -246,13 +275,30 @@
   </section>
 
   <!-- FOOTER -->
-  <footer>
-    <div>Solidaritetsföreningen</div>
-    <div>© 2026</div>
+<footer>
+  <div class="footer-content">
 
-    <!-- Secondary Logo -->
-    <img src="assets/logo-dayanisma.png" alt="Dayanışma logotyp" />
-  </footer>
+    <div class="footer-primary">
+      <div>Solidaritetsföreningen</div>
+      <div>© 2026</div>
+    </div>
+
+    <div class="footer-social">
+      <a href="https://instagram.com/placeholder" target="_blank" rel="noopener">
+        Instagram
+      </a>
+      <span class="footer-divider">·</span>
+      <a href="https://facebook.com/placeholder" target="_blank" rel="noopener">
+        Facebook
+      </a>
+    </div>
+
+    <div class="footer-logo">
+      <img src="assets/logo-dayanisma.png" alt="Dayanışma logotyp" />
+    </div>
+
+  </div>
+</footer>
 
 </body>
 </html>
