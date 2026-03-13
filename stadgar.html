@@ -9,93 +9,79 @@
 
 <style>
 :root{
---text-primary:#111111;
---text-secondary:#555555;
---background-light:#f5f5f5;
---max-width:900px;
+  --text-primary:#111;
+  --text-secondary:#555;
+  --background-light:#f5f5f5;
+  --max-width:900px;
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:'Inter',sans-serif;
-color:var(--text-primary);
-line-height:1.6;
-background:white;
-}
-
-nav{
-text-align:center;
-padding:20px;
-font-size:15px;
-}
-
-nav a{
-text-decoration:none;
-color:var(--text-primary);
-margin:0 10px;
-font-weight:500;
+  font-family:'Inter',sans-serif;
+  color:var(--text-primary);
+  line-height:1.6;
 }
 
 .container{
-max-width:var(--max-width);
-margin:0 auto;
-padding:80px 20px;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:80px 20px;
+}
+
+nav{
+  text-align:center;
+  padding:20px;
+  font-size:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#111;
+  margin:0 10px;
+  font-weight:500;
 }
 
 h1,h2{
-font-family:'Playfair Display',serif;
-font-weight:600;
+  font-family:'Playfair Display',serif;
 }
 
-h1{
-font-size:42px;
-margin-bottom:30px;
-}
-
-h2{
-font-size:24px;
-margin-top:40px;
-margin-bottom:15px;
-}
+h1{font-size:42px;margin-bottom:20px}
+h2{font-size:28px;margin-bottom:20px}
 
 p{
-font-size:18px;
-color:var(--text-secondary);
-margin-bottom:20px;
+  font-size:18px;
+  color:var(--text-secondary);
+  margin-bottom:20px;
 }
 
 footer{
-padding:60px 20px;
-text-align:center;
-font-size:14px;
-color:#777;
-}
-
-.footer-social{
-margin-top:20px;
+  padding:60px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#777;
 }
 
 .footer-social a{
-text-decoration:none;
-color:var(--text-primary);
-margin:0 8px;
+  text-decoration:none;
+  color:#111;
+  margin:0 8px;
 }
 
 .footer-logo img{
-max-width:160px;
-margin-top:20px;
-opacity:.85;
+  max-width:160px;
+  margin-top:20px;
+  opacity:.85;
 }
 
-@media (max-width:600px){
-h1{font-size:32px}
-h2{font-size:22px}
-p{font-size:16px}
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .container { padding: 40px 15px; }
+  h1 { font-size:32px; }
+  h2 { font-size:22px; }
+  p { font-size:16px; }
+  .footer-logo img { max-width:140px; margin-top:15px; }
+  .footer-social a { font-size:14px; }
 }
 </style>
 </head>
@@ -103,83 +89,42 @@ p{font-size:16px}
 <body>
 
 <nav>
-<a href="/">Hem</a> |
-<a href="/about.html">Om oss</a> |
-<a href="/contact.html">Kontakt</a> |
-<a href="/stadgar.html">Stadgar</a>
+  <a href="/">Hem</a> |
+  <a href="/about.html">Om oss</a> |
+  <a href="/contact.html">Kontakt</a> |
+  <a href="/stadgar.html">Stadgar</a>
 </nav>
 
 <section class="container">
+  <h1>Stadgar</h1>
 
-<h1>Stadgar</h1>
+  <h2>Ändamål</h2>
+  <p>
+    Solidaritetsföreningen är partipolitiskt och religiöst obunden. Föreningen har till ändamål att sträva mot fredlig, solidarisk och anti-rasistisk utveckling i Sverige.
+  </p>
 
-<p>
-Solidaritetsföreningen är en ideell förening som är partipolitiskt
-och religiöst obunden.
-</p>
+  <h2>Värdegrund</h2>
+  <p>
+    Föreningens grundläggande värden ligger i linje med de värden som vårt demokratiska samhälle vilar på. Värdegrunden omfattar människolivets okränkbarhet, individens frihet och integritet, alla människors lika värde, jämställdhet mellan könen och solidaritet mellan människor.
+  </p>
 
-<h2>Ändamål</h2>
-
-<p>
-Föreningen har till ändamål att sträva mot en fredlig, solidarisk
-och antirasistisk utveckling i Sverige.
-</p>
-
-<p>
-Föreningen ska arbeta för bättre levnadsvillkor och samarbeta
-med föreningar och organisationer som har samma mål och värdegrund.
-</p>
-
-<h2>Värdegrund</h2>
-
-<p>
-Föreningens grundläggande värden ligger i linje med de värden
-som vårt demokratiska samhälle vilar på.
-</p>
-
-<p>
-Vår värdegrund omfattar människolivets okränkbarhet,
-individens frihet och integritet,
-alla människors lika värde,
-jämställdhet mellan könen
-samt solidaritet mellan människor.
-</p>
-
-<h2>Verksamhet</h2>
-
-<p>
-Föreningen skapar aktiviteter som främjar dessa syften och mål
-och som motverkar utanförskap i samhället.
-</p>
-
-<p>
-Detta kan ske genom kulturaktiviteter, musikskapande,
-sociala mötesplatser och temakvällar
-för olika generationer i olika delar av Stockholm.
-</p>
-
-<p>
-Föreningen samarbetar även med andra organisationer
-som delar samma värdegrund.
-</p>
-
+  <h2>Verksamhet</h2>
+  <p>
+    Föreningen skapar aktiviteter som främjar dessa syften och mål som bekämpar utanförskap, såsom kulturaktiviteter, musikskapande, temakvällar för äldre och samarbete med andra organisationer med samma värdegrund.
+  </p>
 </section>
 
 <footer>
+  <div>Solidaritetsföreningen – Ideell förening</div>
 
-<div>
-Solidaritetsföreningen – Ideell förening
-</div>
+  <div class="footer-social">
+    <a href="https://instagram.com">Instagram</a> ·
+    <a href="https://www.facebook.com/profile.php?id=61588214116632">Facebook</a>
+  </div>
 
-<div class="footer-social">
-<a href="https://instagram.com" target="_blank">Instagram</a> ·
-<a href="https://www.facebook.com/profile.php?id=61588214116632" target="_blank">Facebook</a>
-</div>
-
-<div class="footer-logo">
-<img src="assets/logo-dayanisma.png" alt="Dayanışma logotyp">
-</div>
-
+  <div class="footer-logo">
+    <img src="assets/logo-dayanisma.png" alt="Dayanışma logotyp">
+  </div>
 </footer>
 
 </body>

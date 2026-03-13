@@ -9,118 +9,206 @@
 
 <style>
 :root{
---text-primary:#111;
---text-secondary:#555;
---background-light:#f5f5f5;
---max-width:900px;
+  --text-primary:#111;
+  --text-secondary:#555;
+  --background-light:#f5f5f5;
+  --max-width:900px;
 }
 
 *{margin:0;padding:0;box-sizing:border-box}
 
 body{
-font-family:'Inter',sans-serif;
-color:var(--text-primary);
-line-height:1.6;
+  font-family:'Inter',sans-serif;
+  color:var(--text-primary);
+  line-height:1.6;
 }
 
 .container{
-max-width:var(--max-width);
-margin:0 auto;
-padding:80px 20px;
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:80px 20px;
 }
 
 nav{
-text-align:center;
-padding:20px;
-font-size:15px;
+  text-align:center;
+  padding:20px;
+  font-size:15px;
 }
 
 nav a{
-text-decoration:none;
-color:#111;
-margin:0 10px;
-font-weight:500;
+  text-decoration:none;
+  color:#111;
+  margin:0 10px;
+  font-weight:500;
 }
 
 .hero{
-text-align:center;
-padding-top:40px;
+  text-align:center;
+  padding-top:40px;
 }
 
 .hero img{
-max-width:320px;
-margin-bottom:40px;
+  max-width:320px;
+  margin-bottom:40px;
 }
 
 h1,h2{
-font-family:'Playfair Display',serif;
+  font-family:'Playfair Display',serif;
 }
 
 h1{font-size:42px;margin-bottom:20px}
 h2{font-size:28px;margin-bottom:20px}
 
 p{
-font-size:18px;
-color:var(--text-secondary);
-margin-bottom:20px;
+  font-size:18px;
+  color:var(--text-secondary);
+  margin-bottom:20px;
 }
 
 .divider{
-width:60px;
-height:2px;
-background:#000;
-margin:30px auto;
+  width:60px;
+  height:2px;
+  background:#000;
+  margin:30px auto;
 }
 
 .section-light{
-background:var(--background-light);
+  background:var(--background-light);
 }
 
 .quote{
-font-family:'Playfair Display',serif;
-font-style:italic;
-font-size:26px;
-text-align:center;
-max-width:700px;
-margin:60px auto;
+  font-family:'Playfair Display',serif;
+  font-style:italic;
+  font-size:26px;
+  text-align:center;
+  max-width:700px;
+  margin:60px auto;
 }
 
 .swish-number{
-font-size:26px;
-font-weight:500;
-text-align:center;
+  font-size:26px;
+  font-weight:500;
+  text-align:center;
 }
 
 .qr-container {
-  max-width: 220px;
-  margin: 20px auto;
-  text-align: center;
+  max-width:220px;
+  margin:20px auto;
+  text-align:center;
 }
 
 .qr-image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  width:100%;
+  height:auto;
+  display:block;
+  margin:0 auto;
 }
 
 footer{
-padding:60px 20px;
-text-align:center;
-font-size:14px;
-color:#777;
+  padding:60px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#777;
 }
 
 .footer-social a{
-text-decoration:none;
-color:#111;
-margin:0 8px;
+  text-decoration:none;
+  color:#111;
+  margin:0 8px;
 }
 
 .footer-logo img{
-max-width:160px;
-margin-top:20px;
-opacity:.85;
+  max-width:160px;
+  margin-top:20px;
+  opacity:.85;
+}
+
+/* ===========================
+   Mobile Optimization
+=========================== */
+@media (max-width: 600px) {
+
+  /* Containers */
+  .container {
+    padding: 40px 15px;
+  }
+
+  /* Hero section */
+  .hero {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .hero img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  /* Headings */
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Paragraphs */
+  p {
+    font-size: 16px;
+  }
+
+  /* Divider */
+  .divider {
+    width: 60px;
+    margin: 20px auto;
+  }
+
+  /* Quote */
+  .quote {
+    font-size: 20px;
+    max-width: 90%;
+    margin: 40px auto;
+  }
+
+  /* Swish donation box */
+  .donation-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+  }
+
+  .swish-number {
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .qr-container {
+    max-width: 140px;
+    margin: 15px auto 0 auto;
+    text-align: center;
+  }
+
+  .qr-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Footer logo and socials */
+  .footer-logo img {
+    max-width: 140px;
+    margin-top: 15px;
+  }
+
+  .footer-social a {
+    font-size: 14px;
+  }
 }
 </style>
 </head>
@@ -128,83 +216,83 @@ opacity:.85;
 <body>
 
 <nav>
-<a href="/">Hem</a> |
-<a href="/about.html">Om oss</a> |
-<a href="/contact.html">Kontakt</a> |
-<a href="/stadgar.html">Stadgar</a>
+  <a href="/">Hem</a> |
+  <a href="/about.html">Om oss</a> |
+  <a href="/contact.html">Kontakt</a> |
+  <a href="/stadgar.html">Stadgar</a>
 </nav>
 
 <section class="hero container">
 
-<img src="assets/logo-main.png" alt="Solidaritetsföreningen logotyp">
+  <img src="assets/logo-main.png" alt="Solidaritetsföreningen logotyp">
 
-<h1>Solidaritetsföreningen</h1>
+  <h1>Solidaritetsföreningen</h1>
 
-<p><strong>Ideell förening i Stockholm sedan 1977.</strong></p>
+  <p><strong>Ideell förening i Stockholm sedan 1977.</strong></p>
 
-<p>Solidaritet över generationer – kampen för rättvisa fortsätter.</p>
+  <p>Solidaritet över generationer – kampen för rättvisa fortsätter.</p>
 
-<div class="divider"></div>
-
-</section>
-
-<section class="container">
-
-<p>
-Solidaritetsföreningen är en ideell förening som arbetar för solidaritet,
-social rättvisa och mänskliga rättigheter. Genom kulturella aktiviteter,
-samarbeten och lokala initiativ arbetar föreningen för ett mer inkluderande
-samhälle.
-</p>
+  <div class="divider"></div>
 
 </section>
 
 <section class="container">
 
-<div class="quote">
-“Solidaritet är inte ett ord - det är ett ansvar.”
-</div>
+  <p>
+    Solidaritetsföreningen är en ideell förening som arbetar för solidaritet,
+    social rättvisa och mänskliga rättigheter. Genom kulturella aktiviteter,
+    samarbeten och lokala initiativ arbetar föreningen för ett mer inkluderande
+    samhälle.
+  </p>
+
+</section>
+
+<section class="container">
+
+  <div class="quote">
+    “Solidaritet är inte ett ord - det är ett ansvar.”
+  </div>
 
 </section>
 
 <section class="section-light">
-<div class="container">
+  <div class="container">
 
-<h2>Stöd vårt arbete</h2>
+    <h2>Stöd vårt arbete</h2>
 
-<p>
-Ditt stöd gör vårt fortsatta arbete möjligt.
-</p>
+    <p>
+      Ditt stöd gör vårt fortsatta arbete möjligt.
+    </p>
 
-<div class="donation-box">
+    <div class="donation-box">
 
-  <div class="swish-number">
-    Swish: 123 562 08 51
+      <div class="swish-number">
+        Swish: 123 562 08 51
+      </div>
+
+      <div class="qr-container">
+        <img src="assets/swish-qr.png" alt="Swish QR-kod för donation" class="qr-image">
+      </div>
+
+    </div>
+
   </div>
-
-  <div class="qr-container">
-    <img src="assets/swish-qr.png" alt="Swish QR-kod för donation" class="qr-image">
-  </div>
-
-</div>
-
-</div>
 </section>
 
 <footer>
 
-<div>
-Solidaritetsföreningen – Ideell förening
-</div>
+  <div>
+    Solidaritetsföreningen – Ideell förening
+  </div>
 
-<div class="footer-social">
-<a href="https://instagram.com">Instagram</a> ·
-<a href="https://www.facebook.com/profile.php?id=61588214116632">Facebook</a>
-</div>
+  <div class="footer-social">
+    <a href="https://instagram.com">Instagram</a> ·
+    <a href="https://www.facebook.com/profile.php?id=61588214116632">Facebook</a>
+  </div>
 
-<div class="footer-logo">
-<img src="assets/logo-dayanisma.png">
-</div>
+  <div class="footer-logo">
+    <img src="assets/logo-dayanisma.png" alt="Dayanışma logotyp">
+  </div>
 
 </footer>
 
