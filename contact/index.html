@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kontakt – Solidaritetsföreningen</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --text-primary:#111;
+  --text-secondary:#555;
+  --background-light:#f5f5f5;
+  --max-width:900px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:'Inter',sans-serif;
+  color:var(--text-primary);
+  line-height:1.6;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:80px 20px;
+}
+
+nav{
+  text-align:center;
+  padding:20px;
+  font-size:15px;
+}
+
+nav a{
+  text-decoration:none;
+  color:#111;
+  margin:0 10px;
+  font-weight:500;
+}
+
+h1,h2{
+  font-family:'Playfair Display',serif;
+}
+
+h1{font-size:42px;margin-bottom:20px}
+h2{font-size:28px;margin-bottom:20px}
+
+p{
+  font-size:18px;
+  color:var(--text-secondary);
+  margin-bottom:20px;
+}
+
+.contact-item{
+  margin-bottom:30px;
+  font-size:17px;
+  color:var(--text-secondary);
+}
+
+.contact-item strong{
+  color:var(--text-primary);
+  font-weight:500;
+}
+
+footer{
+  padding:60px 20px;
+  text-align:center;
+  font-size:14px;
+  color:#777;
+}
+
+.footer-social a{
+  text-decoration:none;
+  color:#111;
+  margin:0 8px;
+}
+
+.footer-logo img{
+  max-width:160px;
+  margin-top:20px;
+  opacity:.85;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .container { padding: 40px 15px; }
+  h1 { font-size:32px; }
+  h2 { font-size:22px; }
+  p { font-size:16px; }
+  .footer-logo img { max-width:140px; margin-top:15px; }
+  .footer-social a { font-size:14px; }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="/">Hem</a> |
+  <a href="/about/">Om oss</a> |
+  <a href="/contact/">Kontakt</a> |
+  <a href="/stadgar/">Stadgar</a>
+</nav>
+
+<section class="container">
+  <h1>Kontakt</h1>
+
+  <div class="contact-item">
+    <strong>Juridiskt namn</strong><br>
+    Solidaritetsförening
+  </div>
+
+  <div class="contact-item">
+    <strong>Organisationsform</strong><br>
+    Ideell förening
+  </div>
+
+  <div class="contact-item">
+    <strong>Organisationsnummer</strong><br>
+    802012-6457
+  </div>
+
+  <div class="contact-item">
+    <strong>Postadress</strong><br>
+    C/O Solidaritetshuset<br>
+    Postbox 26<br>
+    Tegelviksgatan 40 Bv<br>
+    116 41 Stockholm
+  </div>
+
+  <div class="contact-item">
+    <strong>E-post</strong><br>
+    <a href="mailto:info@solidaritetsforeningen.org">info@solidaritetsforeningen.org</a>
+  </div>
+</section>
+
+<footer>
+  <div>Solidaritetsföreningen – Ideell förening</div>
+
+  <div class="footer-social">
+    <a href="https://instagram.com">Instagram</a> ·
+    <a href="https://www.facebook.com/profile.php?id=61588214116632">Facebook</a>
+  </div>
+
+  <div class="footer-logo">
+    <img src="/assets/logo-dayanisma.png" alt="Dayanışma logotyp">
+  </div>
+</footer>
+
+</body>
+</html>
